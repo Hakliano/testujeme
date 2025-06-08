@@ -1,0 +1,170 @@
+/* ===============================
+   Global Styles for Blades Tigers
+   Author: Pan Ředitel
+   =============================== */
+
+/* 🔸 BARVY A ZÁKLAD */
+:root {
+  --main-orange: #FF6A00;
+  --main-black: #111111;
+  --light-gray: #eeeeee;
+  --text-white: #ffffff;
+  --text-muted: #cccccc;
+  --max-width: 1200px;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-black);
+  color: var(--text-white);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+/* 🔸 KONTEJNER */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 🔸 HLAVIČKA */
+header {
+  background-color: var(--main-orange);
+  padding: 20px;
+  text-align: center;
+  color: var(--main-black);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 🔸 NAVIGACE */
+nav {
+  background-color: var(--main-black);
+  border-top: 4px solid var(--main-orange);
+  border-bottom: 2px solid var(--main-orange);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--main-orange);
+}
+
+/* 🔸 PATIČKA */
+footer {
+  background-color: var(--main-black);
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--main-orange);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* 🔸 TITULNÍ SEKCE */
+.hero {
+  background-color: var(--main-orange);
+  color: var(--main-black);
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.4rem;
+}
+
+/* 🔸 TLAČÍTKA */
+.button {
+  background-color: var(--main-orange);
+  color: var(--main-black);
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #e65c00;
+}
+
+
+.team-roster {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.player-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid var(--main-orange);
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  color: var(--text-white);
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.timeline {
+  margin-top: 30px;
+  border-left: 3px solid var(--main-orange);
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--main-orange);
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  color: var(--main-orange);
+  margin-bottom: 5px;
+}
+
+.featured {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-left: 5px solid var(--main-orange);
+}

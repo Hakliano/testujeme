@@ -1,102 +1,57 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Ukázková stránka</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 6px;
-            text-align: center;
-            margin-left: 14px;
-        }
-
-        .modra {
-            color: blue;
-        }
-        .zelena {
-            color: rgb(33, 163, 72);
-        }
-        .zluta {
-            color: rgb(217, 236, 42);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Blades Tigers – Domů</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Vítejte na ukázkové stránce</h1>
-    <h2>Toto je nadpis druhé úrovně</h2>
+  <!-- HLAVIČKA -->
+  <header>
+    <h1>Blades Tigers</h1>
+    <p>Síla. Rychlost. Hrdost.</p>
+  </header>
 
-    <p>Tento odstavec slouží jako demonstrace použití elementu &lt;p&gt; v HTML. Níže uvidíte tabulku se vzorovými daty.</p>
-
-    <table>
-        <tr>
-            <th>Sloupec 1</th>
-            <th>Sloupec 2</th>
-            <th>Sloupec 3</th>
-            <th>Sloupec 4</th>
-        </tr>
-        <tr>
-            <td>Řádek 1</td>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-        </tr>
-        <tr>
-            <td>Řádek 2</td>
-            <td>Data 4</td>
-            <td>Data 5</td>
-            <td>Data 6</td>
-        </tr>
-        <tr>
-            <td>Řádek 3</td>
-            <td>Data 7</td>
-            <td>Data 8</td>
-            <td>Data 9</td>
-        </tr>
-        <tr>
-            <td>Řádek 4</td>
-            <td>Data 10</td>
-            <td>Data 11</td>
-            <td>Data 12</td>
-        </tr>
-        <tr>
-            <td>Řádek 5</td>
-            <td>Data 13</td>
-            <td>Data 14</td>
-            <td>Data 15</td>
-        </tr>
-    </table>
-
-    <p>Obrázek zvířátka s odkazem na externí zdroj:</p>
-    <a href="https://www.pexels.com/photo/adorable-puppy-on-white-background-1108099/" target="_blank">
-        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300" alt="Roztomilé štěňátko">
-    </a>
-
-    <p>Děkujeme za návštěvu této stránky. Níže naleznete recept na výrobu cheesecake.</p>
-
-    <h2>Ingredience:</h2>
+  <!-- NAVIGACE -->
+  <nav>
     <ul>
-        <li>Smetanový sýr (např. Philadelphia)</li>
-        <li>Cukr</li>
-        <li>Vejce</li>
-        <li>Máslo</li>
-        <li>Smetana ke šlehání</li>
-        <li>Vanilkový extrakt</li>
-        <li>Sušenky (např. Lotus nebo Bebe)</li>
-        <li>Citronová šťáva</li>
+      <li><a href="index.html">Domů</a></li>
+      <li><a href="soupiska.html">Soupiska</a></li>
+      <li><a href="historie.html">Historie</a></li>
     </ul>
+  </nav>
 
-    <h2>Postup:</h2>
-    <ol>
-        <li>Rozdrťte sušenky a smíchejte s rozpuštěným máslem.</li>
-        <li>Vytvořte korpus a dejte chladit do lednice.</li>
-        <li>Smíchejte sýr, cukr, vejce, vanilku a citronovou šťávu.</li>
-        <li>Vlijte směs na korpus a pečte ve vodní lázni při 160 °C asi 50 minut.</li>
-        <li>Po upečení nechte vychladnout a poté dejte na několik hodin do lednice.</li>
-    </ol>
+  <!-- HERO SEKCE -->
+  <section class="hero">
+    <h2>Vítejte v aréně Blades Tigers</h2>
+    <p>Náš led, naše pravidla. Připojte se k legendě!</p>
+    <button class="button" onclick="location.href='soupiska.html'">Poznej tým</button>
+    <button class="button" onclick="location.href='historie.html'">Naše historie</button>
+  </section>
+
+  <!-- HLAVNÍ OBSAH -->
+  <main class="container">
+
+    <section>
+      <h2>Aktuality</h2>
+      <p><strong>Poslední zápas:</strong> Blades Tigers 5 – 2 Ice Reapers</p>
+      <p><strong>Příští zápas:</strong> Blades Tigers vs. Frost Wolves – Sobota 20:00</p>
+    </section>
+
+    <section>
+      <h3>O týmu</h3>
+      <p>Blades Tigers je fiktivní hokejový tým tvořený legendami, budoucími hvězdami a odhodláním. Jsme tu, abychom dominovali na ledě i mimo něj.</p>
+      <img src="https://via.placeholder.com/1000x400?text=Blades+Tigers+Aréna" alt="Aréna Blades Tigers" style="width:100%; margin-top: 20px;">
+    </section>
+
+  </main>
+
+  <!-- PATIČKA -->
+  <footer>
+    <p>&copy; 2025 Blades Tigers. Všechna práva vyhrazena.</p>
+  </footer>
 
 </body>
 </html>
-
